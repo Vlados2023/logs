@@ -16,7 +16,7 @@ int main()
 		cout << "Error" << endl;
 		return 0;
 	}
-	cout << "data\t" << "result" << endl;
+	cout << "data\t\t\t"<<"name\t" << "result" << endl;
 	//experimental::filesystem::create_directories("C:/Users/User/Desktop/laba/logs");
 	for (auto& p : std::filesystem::directory_iterator("C:/Users/User/Desktop/logs"))
 	{
@@ -42,7 +42,7 @@ int main()
 				auto q = a.find('(');
 				auto w = a.find(')');
 				string data = a.substr(q + 1, w - q - 1);
-				cout << data << ":0";
+				cout << data << ":\t";
 				cout << name_a << "\t" << result_a << endl;
 			}
 			getline(file, f);
