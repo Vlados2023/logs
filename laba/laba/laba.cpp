@@ -33,7 +33,7 @@ int main()
 			string name_a = f.substr(result + 1, f.size() - result - 1);
 			result = name_a.find(':');
 			string name_b = name_a.substr(0, result);
-			if (f.find("garbage") && name == name_b)
+			if (f.find("garbage")==-1 && name == name_b)
 			{
 				result = f.find(':');
 				string c = f.substr(0, result);
